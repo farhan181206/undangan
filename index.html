@@ -38,7 +38,7 @@
             <h1 class="text-white align-center text-center font-regular text-[60px] sm:text-[80px] md:text-[100px]" style="font-family: 'Passions Conflict', cursive;">Anonym & Mynonym</span></h1>
             <hr class="m-auto border-[2px] border-[#fff] w-[16%]">
             <p class="text-center text-white font-semibold pt-10">09 November 2023</p>
-            <button class="btn-open block m-auto py-2 w-[250px] mt-4 text-center text-white bg-red-400 rounded-lg cursor-pointer" id="open"> Open Invitation </button>
+            <button class="btn-open block m-auto py-2 w-[250px] mt-4 text-center text-white bg-red-400 rounded-lg cursor-pointer" id="open" onclick="playAudio()"> Open Invitation </button>
         </div>
     </div>
     
@@ -416,7 +416,12 @@
         </button>
         </div>
     </div>
-  
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
     <script src="query-3.6.1.min.js"></script>
     <script src="script.js"></script>
 </body>
